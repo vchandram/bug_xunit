@@ -30,11 +30,17 @@ namespace Bug
         
         public ExampleClassData()
         {
-            Add(new ExampleTestCase(1, 2, 3, 4)
+            Add(new ExampleTestCase(1, 2)
             { Name = GetUniqueName() });
 
             Add(new ExampleTestCase(3, 4)
-            { Name = GetUniqueName() });            
+            { Name = GetUniqueName() });      
+            
+            Add(new ExampleTestCase(5,6)
+            { Name = GetUniqueName() });
+            
+            Add(new ExampleTestCase(7,8)
+            { Name = GetUniqueName() });
         }
     }
 
